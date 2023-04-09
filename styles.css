@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
+.container {
+  width: 600px;
+  height: 460px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+picture > img {
+  border-radius: 10px 0 0 10px;
+  width: 300px;
+  height: 460px;
+}
+
+.description {
+  margin: auto 30px;
+  width: 300px;
+  height: 460px;
+}
+
+.description > .perfume {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: hsl(228, 12%, 48%);
+}
+
+.description > h1 {
+  margin-top: 10px;
+  font-family: "Fraunces", serif;
+}
+
+.description > p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.desc {
+  color: hsl(228, 12%, 48%);
+}
+
+.price {
+  display: flex;
+}
+
+.price > h1 {
+  font-family: "Fraunces", serif;
+  margin-right: 25px;
+  color: hsl(158, 36%, 37%);
+}
+
+.price > p {
+  margin-top: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-family: 500;
+  color: hsl(228, 12%, 48%);
+}
+
+button {
+  padding-right: 65px;
+  padding-left: 65px;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  color: white;
+}
+button:hover {
+  background-color: hsl(157, 60%, 16%);
+  cursor: pointer;
+}
+
+button > svg {
+  margin-right: 11px;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 660px;
+  }
+  picture > img {
+    border-radius: 10px 10px 0 0;
+    width: 350px;
+    height: 250px;
+  }
+  button {
+    text-align: center;
+    padding-left: 98px;
+    padding-right: 98px;
+  }
+}
